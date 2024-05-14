@@ -13,6 +13,16 @@
 		    border-radius: 4px; /* 圆角 */
 		    font-family: Menlo, Monaco, Consolas, "Courier New", monospace; /* 字体 */
 	    }
+	    .carownerpic > img {
+	    	width: 100%;
+	    	height: 100%;
+	    	margin-bottom: 10px;
+	    }
+	    #pic_title {
+	    	font-style: italic;
+	    	color: gray;
+	    	margin-bottom: 10px;
+	    }
 	</style>
 </head>
 <body>
@@ -42,8 +52,11 @@
 		    &nbsp;
 		    我们从下图可以看出，“车主之家”这里也利用了他们本站的数据做了一些图表展示分析，那现在我们也拿到他们的数据自己做一波，我们这次做一些动态图表，去展示和描述一些数据随日期变化而变化的情况。
 		</p>
-		<div>
+		<div class="carownerpic">
+		    <div class="d-flex justify-content-center" id="pic_title"><text class="fs-6">图一</text></div>
 		    <img src="./imgs/homofcarowner1.png" class="rounded mx-auto d-block">
+		    <div class="d-flex justify-content-center" id="pic_title"><text class="text-center fs-6">图二</text></div>
+		    <img src="./imgs/homofcarowner2.png" class="rounded mx-auto d-block">
 		</div>
 		<div class="code_style">
 			<pre>
