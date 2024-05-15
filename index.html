@@ -61,6 +61,13 @@
 		    <div class="d-flex justify-content-center" id="pic_title"><text class="text-center fs-6">图二</text></div>
 		    <img src="./imgs/homofcarowner2.png" class="rounded mx-auto d-block">
 		</div>
+		<p class="text-start lh-base">
+		    &nbsp;
+		    &nbsp;
+		    &nbsp;
+		    &nbsp;
+		    其实做爬虫比较关键的一点还是对所需数据的页面分析，有些数据是直接展示在静态页面上面（比如我们这次要爬取的“车主之家”），这种我们可以直接通过拉取html源码，然后解析其中的标签内容即可得到我们想要的数据；但有些较为复杂的，交互式比较多的页面，数据一般会放在服务器端，页面会通过一些api请求去想服务器发起数据请求，然后返回数据之后再将数据动态展示在页面上，这种动态页面的爬取一般都需要探索出数据的api接口，然后通过http请求去拿到json数据，再解析json数据，比如京东的商品页就是这样的，但京东的商品页并不好爬，原因是京东作为大厂，它的反爬虫机制做的还是很好的，如果没有很好的爬虫技巧基本没一小会就会被封ip了。
+		</p>
 		<div class="code_style">
 			<pre>
 			    <code>
