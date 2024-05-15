@@ -79,6 +79,13 @@
 		    <div class="d-flex justify-content-center" id="pic_title"><text class="text-center fs-6">图三</text></div>
 		    <img src="./imgs/developerTool.png" class="rounded mx-auto d-block">
 		</div>
+		<p class="text-start lh-base">
+		    &nbsp;
+		    &nbsp;
+		    &nbsp;
+		    &nbsp;
+		    经这一番分析过后，我们基本确定可以通过抓取网页源代码进行源码解析来获取我们想要的销售列表数据，我们获取网页源码的方式就是通过python的requests的get请求，向网站发起http请求，返回的数据中就是网页的html源代码。并且我们发现网页的翻页也是很有规律的，比如第一页的地址是：https://xl.16888.com/ev-1.html，第二页的地址是：https://xl.16888.com/ev-2.html。很容易发现，两个地址基本是一样的，除了.html前面的数字是不一样的，这就说明了通过这个数据的变更可以让我们直接访问到不同页的页面，而在python里面要实现这个数字的变更还不简单，直接进行一个数字序列（range(0,n,1)）的for循环遍历就行啦。代码就直接放在下面以供参考。
+		</p>
 		<div class="code_style">
 			<pre>
 			    <code>
