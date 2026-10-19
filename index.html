@@ -1,23 +1,955 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-	<title>myFirstPage</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-
-	<style type="text/css">
-	    .v1{
-	    	width: 100%;
-	    	height: 100%;
-	    }
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="梁华平">
+  <meta name="theme-color" content="#04070c">
+  <meta name="description" content="梁华平的个人数据作品集：5 年金融数据开发经验，从数据工程走向量化风控。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="梁华平 · Data × Risk">
+  <meta property="og:description" content="5 年金融数据开发经验。把数据变成风险的刻度。">
+  <meta property="og:image" content="assets/portrait.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>梁华平 · Data × Risk</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/portrait.png" as="image">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "梁华平",
+      "alternateName": "Liang Huaping",
+      "jobTitle": "数据开发工程师",
+      "description": "5 年金融数据开发经验，关注数据工程、数据治理与量化风控。",
+      "email": "mailto:gdutlianghuaping@163.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "广州",
+        "addressCountry": "CN"
+      },
+      "knowsAbout": ["数据工程", "数据治理", "量化风控", "Python", "SQL", "Hive", "Flink"]
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>.loader{display:none}</style></noscript>
 </head>
 <body>
-    <div>
-	    <video controls class="v1" style="object-fit:fill" webkit-playsinline="true" playsinline="true" autoplay="autoplay" preload="auto">
-	        <source src="./videos/docker.mp4" type="video/mp4">
-	    </video>
-	</div>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-mark">LH<span>.</span></div>
+    <div class="loader-line"><i></i></div>
+    <div class="loader-copy"><span>INITIALIZING PROFILE</span><span>DATA × RISK</span></div>
+  </div>
+
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="梁华平个人主页，返回顶部">
+        <span class="brand-mark">LH<span>.</span></span>
+        <span class="brand-meta"><strong>梁华平</strong><small>DATA × RISK</small></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="主导航">
+        <a href="#about"><span>01</span>关于</a>
+        <a href="#capabilities"><span>02</span>能力</a>
+        <a href="#impact"><span>03</span>影响</a>
+        <a href="#experience"><span>04</span>履历</a>
+        <a href="#projects"><span>05</span>项目</a>
+        <a href="#lab"><span>06</span>实验室</a>
+        <a href="#contact"><span>07</span>联系</a>
+        <div class="nav-mobile-foot">
+          <span class="availability"><i class="pulse-dot"></i> OPEN TO WORK · GUANGZHOU</span>
+          <a href="mailto:gdutlianghuaping@163.com">gdutlianghuaping@163.com</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <span class="availability"><i class="pulse-dot"></i> OPEN TO WORK</span>
+        <button class="menu-toggle" id="menu-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-outline" aria-hidden="true">LIANG</div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow reveal">
+            <span class="eyebrow-line"></span>
+            <span>PORTFOLIO / 2026</span>
+            <span class="eyebrow-loc">GUANGZHOU · CN</span>
+          </div>
+
+          <h1 class="hero-title reveal">
+            <span class="hero-name">梁华平</span>
+            <span class="hero-name-en">LIANG&nbsp;HUAPING</span>
+          </h1>
+
+          <div class="hero-role reveal" aria-label="数据工程师，方向量化风控">
+            <span>DATA ENGINEER</span>
+            <i aria-hidden="true"></i>
+            <span>QUANT RISK</span>
+          </div>
+
+          <p class="hero-thesis reveal">把数据，<br><em>变成风险的刻度。</em></p>
+
+          <p class="hero-desc reveal">
+            5 年金融数据开发经验。做过标签、数仓、实时链路与合规系统，
+            现在把工程能力带向量化风控——让每一个判断，都有口径、有证据、有回响。
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#projects"><span>进入项目档案</span><b aria-hidden="true">↗</b></a>
+            <a class="btn btn-ghost" href="#contact"><span>建立连接</span><b aria-hidden="true">→</b></a>
+          </div>
+
+          <div class="hero-metrics reveal" aria-label="核心数据">
+            <div class="hero-metric">
+              <strong><span data-counter="5">0</span><sup>+</sup></strong>
+              <span>年金融数据经验</span>
+            </div>
+            <div class="hero-metric">
+              <strong><span data-counter="8">0</span><sup></sup></strong>
+              <span>核心项目切片</span>
+            </div>
+            <div class="hero-metric">
+              <strong><span data-counter="99">0</span><sup>%+</sup></strong>
+              <span>数据逻辑一致性</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-stage">
+            <div class="stage-grid" aria-hidden="true"></div>
+            <div class="orbit orbit-a" aria-hidden="true"></div>
+            <div class="orbit orbit-b" aria-hidden="true"></div>
+            <div class="orbit orbit-c" aria-hidden="true"></div>
+
+            <div class="portrait-frame">
+              <div class="portrait-halo" aria-hidden="true"></div>
+              <img src="assets/portrait.png" alt="梁华平侧脸肖像" width="901" height="1130">
+              <div class="portrait-scan" aria-hidden="true"></div>
+              <div class="frame-corner fc-tl" aria-hidden="true"></div>
+              <div class="frame-corner fc-tr" aria-hidden="true"></div>
+              <div class="frame-corner fc-bl" aria-hidden="true"></div>
+              <div class="frame-corner fc-br" aria-hidden="true"></div>
+            </div>
+
+            <div class="stage-tag tag-top">
+              <span>SUBJECT_01</span>
+              <b>LHP / 029</b>
+            </div>
+
+            <div class="stage-tag tag-side">
+              <span class="tag-line"></span>
+              <span>PROFILE SIGNAL</span>
+            </div>
+
+            <div class="float-card float-score">
+              <div class="float-head"><span>RISK READINESS</span><span class="sim">SIM</span></div>
+              <div class="float-value"><strong>87.4</strong><span>/ 100</span></div>
+              <svg viewBox="0 0 120 30" preserveAspectRatio="none" aria-hidden="true">
+                <path class="float-path" d="M0 25 C10 22 15 24 24 20 S38 23 48 16 S63 18 74 11 S92 15 102 7 S112 9 120 3"></path>
+              </svg>
+            </div>
+
+            <div class="float-card float-signal">
+              <div class="float-head"><span>SIGNAL</span><span class="signal-live"><i></i>LIVE</span></div>
+              <p>23.1291° N<br>113.2644° E</p>
+              <span class="float-note">DATA IS THE NEW SENSE</span>
+            </div>
+
+            <div class="stage-caption" aria-hidden="true">
+              <span>SCAN / 01</span>
+              <span>IDENTITY LOCKED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero-foot">
+        <div class="hero-clock">
+          <span class="mono-label">LOCAL TIME / CST</span>
+          <strong id="clock">00:00:00</strong>
+        </div>
+        <a class="scroll-cue" href="#about">
+          <span>SCROLL TO DECODE</span>
+          <i aria-hidden="true"></i>
+        </a>
+        <span class="hero-version">V.2026.10 / SYSTEM ONLINE</span>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>PYTHON</span><i>✦</i><span>SQL</span><i>✦</i><span>HIVE</span><i>✦</i><span>HADOOP</span><i>✦</i><span>FLINK</span><i>✦</i><span>KAFKA</span><i>✦</i><span>TRINO</span><i>✦</i><span>SPARK</span><i>✦</i><span>DATAWORKS</span><i>✦</i><span>DOCKER</span><i>✦</i><span>RISK SIGNALS</span><i>✦</i>
+        <span>PYTHON</span><i>✦</i><span>SQL</span><i>✦</i><span>HIVE</span><i>✦</i><span>HADOOP</span><i>✦</i><span>FLINK</span><i>✦</i><span>KAFKA</span><i>✦</i><span>TRINO</span><i>✦</i><span>SPARK</span><i>✦</i><span>DATAWORKS</span><i>✦</i><span>DOCKER</span><i>✦</i><span>RISK SIGNALS</span><i>✦</i>
+      </div>
+    </div>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">01</span>
+          <span class="section-kicker">PROFILE / 关于我</span>
+          <span class="section-line"></span>
+          <span class="section-side">DATA WITH CONTEXT</span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-main">
+            <h2 class="display reveal">用工程的确定性，<br>对抗风险的<span class="accent">不确定性</span>。</h2>
+
+            <p class="lead reveal">
+              我是梁华平，一名在金融数据现场工作了 5 年的数据开发工程师。
+              我的工作，是把业务语言翻译成可验证的数据链路。
+            </p>
+            <p class="body-copy reveal">
+              从标签口径、跑批调度，到跨源一致性、实时查询，再到监管报送与报表自动化，
+              我习惯在数据流的最深处找答案。现在，我把方向瞄准量化风控：风险不该只是事后报表，
+              它应该是一组持续被观测、验证和预警的信号。
+            </p>
+
+            <div class="principles">
+              <article class="principle reveal">
+                <span class="principle-num">01</span>
+                <h3>口径先行</h3>
+                <p>Metric before model. 先定义清楚“算什么”，再讨论“怎么算”。</p>
+                <span class="principle-en">METRIC FIRST</span>
+              </article>
+              <article class="principle reveal">
+                <span class="principle-num">02</span>
+                <h3>验证闭环</h3>
+                <p>Trust, then verify. 每一个结果，都要能被交叉验证和复现。</p>
+                <span class="principle-en">VERIFY LOOP</span>
+              </article>
+              <article class="principle reveal">
+                <span class="principle-num">03</span>
+                <h3>业务翻译</h3>
+                <p>Context is alpha. 数据只有进入业务语境，才会成为判断力。</p>
+                <span class="principle-en">BUSINESS CONTEXT</span>
+              </article>
+            </div>
+          </div>
+
+          <aside class="dossier reveal" aria-label="个人档案">
+            <div class="dossier-top">
+              <span>PERSONNEL FILE</span>
+              <span class="dossier-id">LHP-029</span>
+            </div>
+            <div class="dossier-scan" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <dl class="dossier-list">
+              <div><dt>BASE</dt><dd>广州 / 中国</dd></div>
+              <div><dt>ROLE</dt><dd>数据开发工程师</dd></div>
+              <div><dt>TARGET</dt><dd class="accent-lime">量化风控工程师</dd></div>
+              <div><dt>EXPERIENCE</dt><dd>5+ 年金融数据</dd></div>
+              <div><dt>EDUCATION</dt><dd>广东工业大学 · 物联网工程</dd></div>
+              <div><dt>FOCUS</dt><dd>风险信号 / 数据验证 / 指标治理</dd></div>
+            </dl>
+            <div class="dossier-bars" aria-hidden="true">
+              <div><span>DATA ENGINEERING</span><i style="--v:92%"></i></div>
+              <div><span>RISK AWARENESS</span><i style="--v:74%"></i></div>
+              <div><span>BUSINESS SENSE</span><i style="--v:88%"></i></div>
+            </div>
+            <div class="dossier-foot">
+              <span class="status-dot"></span>
+              <span>PROFILE VERIFIED / 2026.10</span>
+            </div>
+            <span class="corner corner-tl" aria-hidden="true"></span>
+            <span class="corner corner-br" aria-hidden="true"></span>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section capabilities" id="capabilities">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">02</span>
+          <span class="section-kicker">CAPABILITY / 能力矩阵</span>
+          <span class="section-line"></span>
+          <span class="section-side">STACK + JUDGEMENT</span>
+        </div>
+
+        <div class="section-intro reveal">
+          <h2 class="display">不是工具清单，<br>是解决问题的<span class="accent-lime">组合拳</span>。</h2>
+          <p>从离线数仓到实时链路，从数据质量到业务口径，工具只是手段，判断才是核心。</p>
+        </div>
+
+        <div class="cap-grid">
+          <div class="radar-panel panel reveal">
+            <div class="panel-head">
+              <span>CAPABILITY RADAR</span>
+              <span class="panel-tag">SELF-ASSESSED / 2026</span>
+            </div>
+            <div class="radar-wrap">
+              <svg class="radar" viewBox="0 0 560 560" role="img" aria-label="能力雷达：数据工程 92，实时计算 78，数据治理 85，业务理解 90，风险管理 72，项目管理 80">
+                <defs>
+                  <linearGradient id="radarFill" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#67f5ff" stop-opacity=".34"></stop>
+                    <stop offset="1" stop-color="#c8ff4d" stop-opacity=".07"></stop>
+                  </linearGradient>
+                  <linearGradient id="radarStroke" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#67f5ff"></stop>
+                    <stop offset="1" stop-color="#c8ff4d"></stop>
+                  </linearGradient>
+                </defs>
+                <g class="radar-grid">
+                  <polygon points="280,232.5 321.1,256.3 321.1,303.7 280,327.5 238.9,303.7 238.9,256.3"></polygon>
+                  <polygon points="280,185 362.3,232.5 362.3,327.5 280,375 197.7,327.5 197.7,232.5"></polygon>
+                  <polygon points="280,137.5 403.5,208.8 403.5,351.3 280,422.5 156.5,351.3 156.5,208.8"></polygon>
+                  <polygon points="280,90 444.5,185 444.5,375 280,470 115.5,375 115.5,185"></polygon>
+                  <line x1="280" y1="280" x2="280" y2="90"></line>
+                  <line x1="280" y1="280" x2="444.5" y2="185"></line>
+                  <line x1="280" y1="280" x2="444.5" y2="375"></line>
+                  <line x1="280" y1="280" x2="280" y2="470"></line>
+                  <line x1="280" y1="280" x2="115.5" y2="375"></line>
+                  <line x1="280" y1="280" x2="115.5" y2="185"></line>
+                </g>
+                <polygon class="radar-shape" points="280,105.2 408.1,205.9 419.9,360.8 280,451 161.5,348.4 148.4,204"></polygon>
+                <g class="radar-points">
+                  <circle cx="280" cy="105.2" r="4"></circle>
+                  <circle cx="408.1" cy="205.9" r="4"></circle>
+                  <circle cx="419.9" cy="360.8" r="4"></circle>
+                  <circle cx="280" cy="451" r="4"></circle>
+                  <circle cx="161.5" cy="348.4" r="4"></circle>
+                  <circle cx="148.4" cy="204" r="4"></circle>
+                </g>
+                <g class="radar-labels">
+                  <text x="280" y="58" text-anchor="middle">数据工程 <tspan>92</tspan></text>
+                  <text x="470" y="178" text-anchor="start">实时计算 <tspan>78</tspan></text>
+                  <text x="470" y="394" text-anchor="start">数据治理 <tspan>85</tspan></text>
+                  <text x="280" y="514" text-anchor="middle">业务理解 <tspan>90</tspan></text>
+                  <text x="90" y="394" text-anchor="end">风险管理 <tspan>72</tspan></text>
+                  <text x="90" y="178" text-anchor="end">项目管理 <tspan>80</tspan></text>
+                </g>
+              </svg>
+              <span class="radar-pulse" aria-hidden="true"></span>
+            </div>
+            <div class="radar-foot">
+              <span>AXIS / 06</span>
+              <span>基于 2020—2026 项目实践的自评画像</span>
+            </div>
+            <span class="corner corner-tl" aria-hidden="true"></span>
+            <span class="corner corner-br" aria-hidden="true"></span>
+          </div>
+
+          <div class="stack-panel">
+            <p class="stack-intro reveal">把复杂问题拆成可执行的链路，再用合适的工具把它跑通。</p>
+
+            <article class="stack-row reveal">
+              <div class="stack-head">
+                <span class="stack-num">01</span>
+                <h3>数据工程</h3>
+                <em>ADVANCED</em>
+              </div>
+              <div class="stack-bar"><i style="--v:94%"></i></div>
+              <p>Python · SQL · Hive · Hadoop · Spark · Trino</p>
+            </article>
+
+            <article class="stack-row reveal">
+              <div class="stack-head">
+                <span class="stack-num">02</span>
+                <h3>实时与接口</h3>
+                <em>WORKING</em>
+              </div>
+              <div class="stack-bar"><i style="--v:78%"></i></div>
+              <p>Flink · Kafka · Redis · SpringBoot · REST API</p>
+            </article>
+
+            <article class="stack-row reveal">
+              <div class="stack-head">
+                <span class="stack-num">03</span>
+                <h3>平台与治理</h3>
+                <em>OPERATIONAL</em>
+              </div>
+              <div class="stack-bar"><i style="--v:86%"></i></div>
+              <p>DataWorks · FBI · Linux · Docker · XXL / Moia</p>
+            </article>
+
+            <article class="stack-row reveal">
+              <div class="stack-head">
+                <span class="stack-num">04</span>
+                <h3>风险与业务</h3>
+                <em>TRANSITIONING</em>
+              </div>
+              <div class="stack-bar"><i style="--v:74%"></i></div>
+              <p>数据校验 · 指标口径 · 监管报送 · 基金指标 · 风险意识</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section impact" id="impact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">03</span>
+          <span class="section-kicker">IMPACT / 数据影响</span>
+          <span class="section-line"></span>
+          <span class="section-side">OUTCOME, NOT OUTPUT</span>
+        </div>
+
+        <div class="section-intro impact-intro reveal">
+          <h2 class="display">让每一个数字，<br>都能落到<span class="accent">业务结果</span>上。</h2>
+          <p>以下指标来自履历中的项目成果，覆盖数据一致性、系统稳定性和业务增量。</p>
+        </div>
+
+        <div class="impact-grid">
+          <article class="metric-card panel reveal">
+            <div class="metric-top"><span>LOGIC CONSISTENCY</span><span class="metric-index">A/01</span></div>
+            <strong class="metric-value"><span data-counter="99">0</span><sup>%+</sup></strong>
+            <p>跨系统数据验证逻辑一致性</p>
+            <svg class="spark" viewBox="0 0 120 40" preserveAspectRatio="none" aria-hidden="true">
+              <path class="spark-area" d="M0 32 C12 30 20 22 32 24 S52 15 64 18 S84 8 96 12 S108 6 120 4 L120 40 L0 40 Z"></path>
+              <path class="spark-line" d="M0 32 C12 30 20 22 32 24 S52 15 64 18 S84 8 96 12 S108 6 120 4"></path>
+            </svg>
+            <span class="metric-foot">MULTI-SOURCE VALIDATION</span>
+          </article>
+
+          <article class="metric-card panel reveal">
+            <div class="metric-top"><span>BUSINESS ALIGNMENT</span><span class="metric-index">A/02</span></div>
+            <strong class="metric-value"><span data-counter="100">0</span><sup>%</sup></strong>
+            <p>核心系统投产业务一致性</p>
+            <svg class="spark" viewBox="0 0 120 40" preserveAspectRatio="none" aria-hidden="true">
+              <path class="spark-area" d="M0 30 C14 28 22 26 34 27 S54 17 68 19 S90 9 102 13 S112 7 120 5 L120 40 L0 40 Z"></path>
+              <path class="spark-line" d="M0 30 C14 28 22 26 34 27 S54 17 68 19 S90 9 102 13 S112 7 120 5"></path>
+            </svg>
+            <span class="metric-foot">PRODUCTION READINESS</span>
+          </article>
+
+          <article class="metric-card panel reveal">
+            <div class="metric-top"><span>STRATEGY ENABLEMENT</span><span class="metric-index">A/03</span></div>
+            <strong class="metric-value"><span data-counter="200">0</span><sup>+</sup></strong>
+            <p>CVM 标签中台支撑的业务需求</p>
+            <svg class="spark" viewBox="0 0 120 40" preserveAspectRatio="none" aria-hidden="true">
+              <path class="spark-area" d="M0 33 C10 33 22 27 34 29 S54 18 68 21 S84 9 96 13 S110 6 120 3 L120 40 L0 40 Z"></path>
+              <path class="spark-line" d="M0 33 C10 33 22 27 34 29 S54 18 68 21 S84 9 96 13 S110 6 120 3"></path>
+            </svg>
+            <span class="metric-foot">TAG MIDDLE LAYER</span>
+          </article>
+
+          <article class="metric-card panel reveal">
+            <div class="metric-top"><span>REVENUE LIFT</span><span class="metric-index">A/04</span></div>
+            <strong class="metric-value metric-cny">¥<span data-counter="1">0</span><sup>亿</sup></strong>
+            <p>2024 年广赢卡新增余额收入</p>
+            <svg class="spark" viewBox="0 0 120 40" preserveAspectRatio="none" aria-hidden="true">
+              <path class="spark-area" d="M0 35 C10 35 22 31 34 32 S52 19 66 24 S82 12 94 16 S110 8 120 3 L120 40 L0 40 Z"></path>
+              <path class="spark-line" d="M0 35 C10 35 22 31 34 32 S52 19 66 24 S82 12 94 16 S110 8 120 3"></path>
+            </svg>
+            <span class="metric-foot">NEW BALANCE REVENUE</span>
+          </article>
+        </div>
+
+        <div class="impact-lower">
+          <article class="ledger panel reveal">
+            <div class="panel-head">
+              <span>OUTCOME LEDGER</span>
+              <span class="panel-tag">2020 — 2026</span>
+            </div>
+            <div class="ledger-rows">
+              <div class="ledger-row">
+                <span>数据验证逻辑一致性</span><b>99%</b>
+                <div class="ledger-bar"><i style="--v:99%"></i></div>
+              </div>
+              <div class="ledger-row">
+                <span>升级后系统运行稳定性</span><b>98%</b>
+                <div class="ledger-bar"><i style="--v:98%"></i></div>
+              </div>
+              <div class="ledger-row">
+                <span>核心项目需求上线及时率</span><b>100%</b>
+                <div class="ledger-bar"><i style="--v:100%"></i></div>
+              </div>
+              <div class="ledger-row">
+                <span>业务数据查询效率</span><b>+10%</b>
+                <div class="ledger-bar"><i style="--v:76%"></i></div>
+              </div>
+              <div class="ledger-row">
+                <span>标签迭代周期</span><b>7 天 → 1 天</b>
+                <div class="ledger-bar"><i style="--v:86%"></i></div>
+              </div>
+            </div>
+            <p class="ledger-note">* 指标来自履历成果描述，部分为项目验收口径。</p>
+            <span class="corner corner-tl" aria-hidden="true"></span>
+            <span class="corner corner-br" aria-hidden="true"></span>
+          </article>
+
+          <aside class="impact-quote reveal">
+            <span class="quote-mark">“</span>
+            <blockquote>风险控制的终点，不是零风险，而是<span>可解释、可复现、可预警</span>的确定性。</blockquote>
+            <div class="quote-meta">
+              <span>LHP / OPERATING PRINCIPLE</span>
+              <span>2026</span>
+            </div>
+            <div class="quote-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">04</span>
+          <span class="section-kicker">EXPERIENCE / 职业轨迹</span>
+          <span class="section-line"></span>
+          <span class="section-side">2016 → NOW</span>
+        </div>
+
+        <div class="experience-layout">
+          <div class="experience-intro reveal">
+            <h2 class="display"><span>从银行数据现场，</span><span>走向<span class="accent-lime">风险信号</span>。</span></h2>
+            <p>六年时间，从校园到银行，从离线数仓到实时链路，再到合规与证券数据。路径在变，方法没变：理解业务、验证数据、交付结果。</p>
+            <div class="exp-index" aria-hidden="true">
+              <span>2016</span><i></i><span>NOW</span>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal current">
+              <div class="time">2026.05 — NOW</div>
+              <div class="node" aria-hidden="true"><span></span></div>
+              <div class="timeline-card">
+                <div class="timeline-meta"><span class="timeline-tag">CURRENT</span><span>证券 / 财富研发</span></div>
+                <h3>数据开发工程师 <span>佳都科技 · 派驻广发证券</span></h3>
+                <p>基金报告自动化与基金指标重构。基于 DGP 文档生成平台串联数据接口与因子，优化私募基金收益率底层口径，重算同类与基准排名指标。</p>
+                <ul class="tag-list"><li>Python</li><li>SQL</li><li>DGP</li><li>基金指标</li></ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="time">2025.09 — 2025.11</div>
+              <div class="node" aria-hidden="true"><span></span></div>
+              <div class="timeline-card">
+                <div class="timeline-meta"><span>项目制协作</span><span>证券 / 本地生活</span></div>
+                <h3>数据开发 · 数据运营 <span>人瑞人才 / 时时同云</span></h3>
+                <p>维护基金指标底层逻辑与 DGP 因子配置；同时参与 SaaS 餐饮业务 BI 看板建设、湖仓指标排障，让数据与业务流程重新对齐。</p>
+                <ul class="tag-list"><li>基金指标</li><li>BI</li><li>湖仓</li><li>DataWorks</li></ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="time">2020.07 — 2025.08</div>
+              <div class="node" aria-hidden="true"><span></span></div>
+              <div class="timeline-card">
+                <div class="timeline-meta"><span>BANKING DATA</span><span>广州银行</span></div>
+                <h3>数据开发 · 数据分析 <span>CVM / 信贷 / 营销 / 合规</span></h3>
+                <p>五年银行数据现场经验：标签中台、信贷数仓回迁、Oracle 到 Hadoop 迁移、实时权益链路、合规审计系统技术管理。既写代码，也负责把上下游拉到同一张桌子上。</p>
+                <ul class="tag-list"><li>Hive</li><li>Oracle</li><li>Flink</li><li>Trino</li><li>XXL</li></ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="time">2016.09 — 2020.06</div>
+              <div class="node" aria-hidden="true"><span></span></div>
+              <div class="timeline-card">
+                <div class="timeline-meta"><span>EDUCATION</span><span>广州</span></div>
+                <h3>物联网工程 · 本科 <span>广东工业大学</span></h3>
+                <p>主修 Hadoop 大数据原理、数据库原理、数据挖掘与分析、Python 编程实践、Linux 系统原理。GPA 3.0 / CET-4。</p>
+                <ul class="tag-list"><li>Hadoop</li><li>Python</li><li>Data Mining</li><li>Linux</li></ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">05</span>
+          <span class="section-kicker">SELECTED FILES / 项目档案</span>
+          <span class="section-line"></span>
+          <span class="section-side">08 FILES / 2020—2026</span>
+        </div>
+
+        <div class="projects-top reveal">
+          <h2 class="display">可验证的<span class="accent">交付物</span>，<br>比形容词更有说服力。</h2>
+          <p>8 个项目切片，覆盖数据工程、实时计算、风控合规与数据产品。点击任意档案查看背景、动作与结果。</p>
+        </div>
+
+        <div class="filter-bar reveal" role="group" aria-label="项目筛选">
+          <button class="filter is-active" data-filter="all" aria-pressed="true">全部 <span>08</span></button>
+          <button class="filter" data-filter="data" aria-pressed="false">数据工程 <span>03</span></button>
+          <button class="filter" data-filter="realtime" aria-pressed="false">实时计算 <span>01</span></button>
+          <button class="filter" data-filter="risk" aria-pressed="false">量化与风控 <span>02</span></button>
+          <button class="filter" data-filter="product" aria-pressed="false">数据产品 <span>02</span></button>
+        </div>
+
+        <div class="project-grid" id="project-grid">
+          <article class="project-card reveal" data-category="data" data-project="cvm" tabindex="0" role="button" aria-label="查看项目：CVM 标签中台">
+            <div class="project-visual">
+              <div class="vis-grid" aria-hidden="true"></div>
+              <span class="vis-id">PRJ_01 / DATA</span>
+              <span class="vis-number">200<sup>+</sup></span>
+              <span class="vis-caption">STRATEGIES ENABLED</span>
+              <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+                <path class="vis-line" d="M0 126 C34 120 48 92 84 98 S134 60 168 72 S224 34 262 46 S320 18 400 24"></path>
+                <path class="vis-line ghost" d="M0 140 C40 132 64 116 100 120 S156 92 194 100 S252 72 292 80 S346 52 400 60"></path>
+                <circle class="vis-dot" cx="400" cy="24" r="4"></circle>
+              </svg>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>数据工程</span><span>2020</span></div>
+              <h3>CVM 标签中台</h3>
+              <p>把高频标签沉淀到中间业务层，统一口径、自动刷新，支撑电销年度 KPI。</p>
+              <div class="project-results"><span>200+ 策略</span><span>12 万张卡</span><span>100% 达成</span></div>
+              <div class="project-foot"><ul class="tag-list"><li>SQL</li><li>Python</li><li>Moia</li></ul><span>OPEN FILE ↗</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="data" data-project="credit" tabindex="0" role="button" aria-label="查看项目：信贷数仓回迁">
+            <div class="project-visual">
+              <div class="vis-grid" aria-hidden="true"></div>
+              <span class="vis-id">PRJ_02 / DATA</span>
+              <span class="vis-number">99<sup>%+</sup></span>
+              <span class="vis-caption">LOGIC CONSISTENCY</span>
+              <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+                <path class="vis-line" d="M0 110 C42 110 54 66 92 72 S146 118 188 92 S240 38 282 56 S340 90 400 34"></path>
+                <path class="vis-line ghost" d="M0 124 C54 124 68 82 110 88 S168 132 212 106 S266 54 310 70 S356 100 400 52"></path>
+                <circle class="vis-dot" cx="400" cy="34" r="4"></circle>
+              </svg>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>数据工程</span><span>2020 — 2021</span></div>
+              <h3>信贷数仓回迁</h3>
+              <p>新旧信贷系统切换中的数据字典映射、Oracle 改造与跨源一致性验证。</p>
+              <div class="project-results"><span>&lt; 2% 故障率</span><span>99%+ 逻辑</span><span>100% 业务</span></div>
+              <div class="project-foot"><ul class="tag-list"><li>Oracle</li><li>Trino</li><li>Python</li></ul><span>OPEN FILE ↗</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="data" data-project="hadoop" tabindex="0" role="button" aria-label="查看项目：Oracle 到 Hadoop 迁移">
+            <div class="project-visual">
+              <div class="vis-grid" aria-hidden="true"></div>
+              <span class="vis-id">PRJ_03 / DATA</span>
+              <span class="vis-number">5K<sup>+</sup></span>
+              <span class="vis-caption">FIELDS MAPPED</span>
+              <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+                <path class="vis-line" d="M0 128 C36 118 52 124 80 102 S118 82 148 92 S190 60 222 70 S270 44 306 52 S352 30 400 20"></path>
+                <path class="vis-line ghost" d="M0 142 C46 136 68 138 96 120 S138 104 172 112 S214 86 248 94 S294 70 330 76 S366 58 400 48"></path>
+                <circle class="vis-dot" cx="400" cy="20" r="4"></circle>
+              </svg>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>数据工程</span><span>2022 — 2023</span></div>
+              <h3>Oracle → Hadoop 迁移</h3>
+              <p>100 张表、5000+ 字段迁入 Hive，重建数据分层与跑批链路。</p>
+              <div class="project-results"><span>100 张表</span><span>20+ 脚本</span><span>稳定性提升</span></div>
+              <div class="project-foot"><ul class="tag-list"><li>Hive</li><li>Spark</li><li>Trino</li></ul><span>OPEN FILE ↗</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="realtime" data-project="realtime" tabindex="0" role="button" aria-label="查看项目：实时权益查询链路">
+            <div class="project-visual">
+              <div class="vis-grid" aria-hidden="true"></div>
+              <span class="vis-id">PRJ_04 / REALTIME</span>
+              <span class="vis-number">0<sup>%</sup></span>
+              <span class="vis-caption">LAUNCH FAILURE RATE</span>
+              <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+                <path class="vis-line" d="M0 92 L44 92 L44 54 L96 54 L96 112 L150 112 L150 70 L204 70 L204 36 L260 36 L260 94 L318 94 L318 62 L400 62"></path>
+                <path class="vis-line ghost" d="M0 120 L50 120 L50 88 L106 88 L106 130 L162 130 L162 100 L218 100 L218 72 L276 72 L276 118 L334 118 L334 90 L400 90"></path>
+                <circle class="vis-dot" cx="400" cy="62" r="4"></circle>
+              </svg>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>实时计算</span><span>2023</span></div>
+              <h3>实时权益查询链路</h3>
+              <p>Flink 读取 Kafka 报文，map 转换后 sink 到 Redis，构建实时权益查询。</p>
+              <div class="project-results"><span>0% 上线故障</span><span>+10% 查询效率</span><span>100% 及时率</span></div>
+              <div class="project-foot"><ul class="tag-list"><li>Flink</li><li>Kafka</li><li>Redis</li></ul><span>OPEN FILE ↗</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="risk" data-project="compliance" tabindex="0" role="button" aria-label="查看项目：合规审计系统">
+            <div class="project-visual">
+              <div class="vis-grid" aria-hidden="true"></div>
+              <span class="vis-id">PRJ_05 / RISK</span>
+              <span class="vis-number">20<sup>+</sup></span>
+              <span class="vis-caption">PERIPHERAL SYSTEMS</span>
+              <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+                <path class="vis-line" d="M0 118 C38 118 50 84 84 92 S124 56 160 70 S208 40 244 58 S300 28 338 40 S376 26 400 18"></path>
+                <path class="vis-line ghost" d="M0 134 C44 134 62 106 96 110 S140 82 178 92 S226 66 264 78 S320 52 360 60 S384 48 400 44"></path>
+                <circle class="vis-dot" cx="400" cy="18" r="4"></circle>
+              </svg>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>量化与风控</span><span>2025</span></div>
+              <h3>合规审计系统</h3>
+              <p>技术经理角色，推动关联交易系统纳管与 20+ 外围系统协同。</p>
+              <div class="project-results"><span>2 大系统投产</span><span>20+ 系统协同</span><span>全链路打通</span></div>
+              <div class="project-foot"><ul class="tag-list"><li>Python</li><li>SQL</li><li>XXL</li></ul><span>OPEN FILE ↗</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="risk" data-project="fund" tabindex="0" role="button" aria-label="查看项目：基金报告自动化">
+            <div class="project-visual">
+              <div class="vis-grid" aria-hidden="true"></div>
+              <span class="vis-id">PRJ_06 / QUANT</span>
+              <span class="vis-number">DGP</span>
+              <span class="vis-caption">REPORT AUTOMATION</span>
+              <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+                <path class="vis-line" d="M0 124 C30 110 54 122 80 98 S120 70 148 84 S188 52 218 64 S264 34 300 48 S352 22 400 30"></path>
+                <path class="vis-line ghost" d="M0 140 C42 130 62 138 90 118 S132 96 164 108 S206 78 240 90 S288 62 324 72 S368 52 400 58"></path>
+                <circle class="vis-dot" cx="400" cy="30" r="4"></circle>
+              </svg>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>量化与风控</span><span>2026 — NOW</span></div>
+              <h3>基金报告自动化</h3>
+              <p>DGP 模板串联数据接口与因子，优化私募收益率口径，重算排名指标。</p>
+              <div class="project-results"><span>试点成功</span><span>报告自动化</span><span>口径优化</span></div>
+              <div class="project-foot"><ul class="tag-list"><li>Python</li><li>SQL</li><li>DGP</li></ul><span>OPEN FILE ↗</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="product" data-project="automation" tabindex="0" role="button" aria-label="查看项目：生产计划参数自动化">
+            <div class="project-visual">
+              <div class="vis-grid" aria-hidden="true"></div>
+              <span class="vis-id">PRJ_07 / PRODUCT</span>
+              <span class="vis-number">1<sup>DAY</sup></span>
+              <span class="vis-caption">FROM ONE WEEK</span>
+              <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+                <path class="vis-line" d="M0 54 C28 54 44 80 72 80 S116 112 148 108 S196 72 230 82 S280 124 318 112 S366 84 400 88"></path>
+                <path class="vis-line ghost" d="M0 72 C38 72 54 96 84 96 S128 128 162 124 S210 90 246 100 S296 138 334 128 S376 102 400 106"></path>
+                <circle class="vis-dot" cx="400" cy="88" r="4"></circle>
+              </svg>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>数据产品</span><span>2021</span></div>
+              <h3>生产计划参数自动化</h3>
+              <p>从 0 到 1 构建参数调整工具，将一周开发量压缩到一天。</p>
+              <div class="project-results"><span>1 天调整</span><span>600 万/月</span><span>100% 稳定</span></div>
+              <div class="project-foot"><ul class="tag-list"><li>Python</li><li>Tkinter</li><li>Oracle</li></ul><span>OPEN FILE ↗</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="product" data-project="factory" tabindex="0" role="button" aria-label="查看项目：标签工厂与财务看板">
+            <div class="project-visual">
+              <div class="vis-grid" aria-hidden="true"></div>
+              <span class="vis-id">PRJ_08 / PRODUCT</span>
+              <span class="vis-number">60<sup>+</sup></span>
+              <span class="vis-caption">DATASETS MAINTAINED</span>
+              <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+                <path class="vis-line" d="M0 120 C34 110 56 116 82 96 S124 84 154 92 S194 60 228 70 S276 38 310 48 S356 24 400 16"></path>
+                <path class="vis-line ghost" d="M0 136 C42 128 64 132 92 114 S138 102 170 108 S210 84 246 92 S294 62 328 70 S370 48 400 42"></path>
+                <circle class="vis-dot" cx="400" cy="16" r="4"></circle>
+              </svg>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>数据产品</span><span>2024 — 2025</span></div>
+              <h3>标签工厂 &amp; 财务看板</h3>
+              <p>标签工厂接入新营管，指标迭代提速；60+ 数据集看板稳定跑批。</p>
+              <div class="project-results"><span>1 天迭代</span><span>60+ 数据集</span><span>¥1 亿增量</span></div>
+              <div class="project-foot"><ul class="tag-list"><li>SQL</li><li>DataWorks</li><li>FBI</li></ul><span>OPEN FILE ↗</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lab" id="lab">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">06</span>
+          <span class="section-kicker">RISK LAB / 交互实验室</span>
+          <span class="section-line"></span>
+          <span class="section-side">SANDBOX MODE</span>
+        </div>
+
+        <div class="lab-top reveal">
+          <div>
+            <h2 class="display">风险，<br>从来不是一张<span class="accent">事后报表</span>。</h2>
+          </div>
+          <p>点击运行一次模拟数据质量扫描。它不连接生产系统，但展示了我处理数据链路时最关心的四件事：完整性、唯一性、一致性、时效性。</p>
+        </div>
+
+        <div class="lab-grid">
+          <article class="terminal panel reveal">
+            <div class="terminal-bar">
+              <span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>quality_scan.sh</span>
+              <span class="terminal-mode">SIMULATION</span>
+            </div>
+            <div class="terminal-body" id="scan-log" aria-live="polite">
+              <p class="log-line"><span class="log-prompt">root@lhp:~$</span> ./quality_scan --scope all</p>
+              <p class="log-line log-hint" id="scan-hint">// 等待运行 · 模拟环境，不连接生产系统</p>
+            </div>
+            <div class="terminal-foot">
+              <button class="scan-btn" id="run-scan" type="button" aria-controls="scan-log">
+                <span class="scan-btn-icon" aria-hidden="true">▶</span>
+                <span id="scan-btn-text">RUN QUALITY SCAN</span>
+              </button>
+              <span class="terminal-status" id="scan-status">STANDBY / 待运行</span>
+            </div>
+            <span class="corner corner-tl" aria-hidden="true"></span>
+            <span class="corner corner-br" aria-hidden="true"></span>
+          </article>
+
+          <article class="gauge-panel panel reveal">
+            <div class="panel-head">
+              <span>DATA QUALITY INDEX</span>
+              <span class="panel-tag">DEMO DATA</span>
+            </div>
+            <div class="gauge-wrap">
+              <svg class="gauge" viewBox="0 0 240 240" role="img" aria-labelledby="gaugeTitle">
+                <title id="gaugeTitle">模拟数据质量指数</title>
+                <defs>
+                  <linearGradient id="gaugeGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#67f5ff"></stop>
+                    <stop offset="1" stop-color="#c8ff4d"></stop>
+                  </linearGradient>
+                </defs>
+                <circle class="gauge-track" cx="120" cy="120" r="96"></circle>
+                <circle class="gauge-ticks" cx="120" cy="120" r="108"></circle>
+                <circle class="gauge-fill" id="quality-gauge" cx="120" cy="120" r="96"></circle>
+              </svg>
+              <div class="gauge-value">
+                <strong id="quality-score">--</strong>
+                <span>/ 100</span>
+              </div>
+            </div>
+            <div class="check-rows">
+              <div class="check-row"><span class="check-light"></span><span>完整性</span><b id="check-completeness">--</b></div>
+              <div class="check-row"><span class="check-light"></span><span>唯一性</span><b id="check-uniqueness">--</b></div>
+              <div class="check-row"><span class="check-light"></span><span>一致性</span><b id="check-consistency">--</b></div>
+              <div class="check-row"><span class="check-light"></span><span>时效性</span><b id="check-freshness">--</b></div>
+            </div>
+            <div class="check-summary">
+              <span><i class="status-dot"></i> 0 CRITICAL</span>
+              <span>3 WATCH</span>
+            </div>
+            <span class="corner corner-tl" aria-hidden="true"></span>
+            <span class="corner corner-br" aria-hidden="true"></span>
+          </article>
+        </div>
+        <p class="lab-disclaimer">* 页面数据为交互演示，用于呈现数据质量检查思路，不代表真实生产指标。</p>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">07</span>
+          <span class="section-kicker">OPEN CHANNEL / 建立连接</span>
+          <span class="section-line"></span>
+          <span class="section-side">SIGNAL OPEN</span>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-main">
+            <p class="contact-kicker reveal">AVAILABLE FOR THE NEXT MOVE</p>
+            <h2 class="contact-title reveal">把不确定性，<br>变成<span class="accent-lime">可度量的信号</span>。</h2>
+            <p class="contact-copy reveal">如果你正在寻找一名懂数据链路、也愿意深入风险逻辑的伙伴，欢迎随时发来信号。广州优先，量化风控 / 数据工程方向。</p>
+
+            <a class="mail-link reveal" href="mailto:gdutlianghuaping@163.com">
+              <span class="mail-label">EMAIL</span>
+              <span class="mail-address">gdutlianghuaping@163.com</span>
+              <span class="mail-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <div class="contact-actions reveal">
+              <a class="btn btn-primary" href="tel:13724184557"><span>拨打电话</span><b aria-hidden="true">↗</b></a>
+              <button class="btn btn-ghost" id="copy-email" type="button"><span>复制邮箱</span><b aria-hidden="true">⧉</b></button>
+            </div>
+          </div>
+
+          <aside class="contact-card reveal" aria-label="联系信息">
+            <div class="contact-card-head">
+              <span>CONTACT_CHANNEL</span>
+              <span class="signal-live"><i></i>LIVE</span>
+            </div>
+            <div class="contact-code" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <dl class="contact-list">
+              <div><dt>NAME</dt><dd>梁华平 / LIANG HUAPING</dd></div>
+              <div><dt>TARGET</dt><dd>量化风控工程师</dd></div>
+              <div><dt>BASE</dt><dd>广州 · 中国</dd></div>
+              <div><dt>PHONE</dt><dd><a href="tel:13724184557">137 2418 4557</a></dd></div>
+              <div><dt>EMAIL</dt><dd><a href="mailto:gdutlianghuaping@163.com">gdutlianghuaping@163.com</a></dd></div>
+              <div><dt>STATUS</dt><dd class="accent-lime">OPEN TO WORK</dd></div>
+            </dl>
+            <div class="contact-foot">
+              <span class="status-dot"></span>
+              <span>RESPONSE CHANNEL ACTIVE</span>
+              <span>CN / CST</span>
+            </div>
+            <span class="corner corner-tl" aria-hidden="true"></span>
+            <span class="corner corner-br" aria-hidden="true"></span>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <a class="footer-brand" href="#top" aria-label="返回顶部">
+          <span>LHP<span class="accent">.</span></span>
+          <small>DATA × RISK</small>
+        </a>
+        <p>Designed as a living data interface.<br>用数据理解世界，用工程交付确定性。</p>
+        <div class="footer-nav">
+          <a href="#about">关于</a>
+          <a href="#projects">项目</a>
+          <a href="#contact">联系</a>
+          <a href="mailto:gdutlianghuaping@163.com">EMAIL ↗</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> 梁华平</span>
+        <span>LAST SYNC / 2026.10</span>
+        <span>GUANGZHOU · 23.1291°N</span>
+        <a href="#top">BACK TO TOP ↑</a>
+      </div>
+      <div class="footer-word" aria-hidden="true">LIANG HUAPING</div>
+    </div>
+  </footer>
+
+  <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title">
+    <div class="modal-shell">
+      <button class="modal-close" id="modal-close" type="button" aria-label="关闭项目详情">✕</button>
+      <div class="modal-meta"><span id="modal-category">DATA</span><span id="modal-year">2020</span><span class="modal-file">FILE / <b id="modal-id">01</b></span></div>
+      <h2 id="modal-title">项目标题</h2>
+      <p class="modal-summary" id="modal-summary"></p>
+      <div class="modal-metrics" id="modal-metrics"></div>
+      <div class="modal-grid">
+        <section><h3><span>01</span>CONTEXT / 背景</h3><p id="modal-context"></p></section>
+        <section><h3><span>02</span>WORK / 动作</h3><ul id="modal-work"></ul></section>
+        <section><h3><span>03</span>OUTCOME / 结果</h3><ul id="modal-outcome"></ul></section>
+      </div>
+      <div class="modal-stack"><span>STACK</span><ul class="tag-list" id="modal-stack"></ul></div>
+    </div>
+    <span class="modal-corner modal-corner-tl" aria-hidden="true"></span>
+    <span class="modal-corner modal-corner-br" aria-hidden="true"></span>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">邮箱已复制到剪贴板</div>
+
+  <script src="app.js"></script>
 </body>
 </html>
